@@ -1,0 +1,28 @@
+debug javascript with dev tools
+
+-content scripts listing lots of functions that shouldnt be going off could be chrome extensions
+rather than your actual code
+- get around this by utilising incognito mode
+
+
+breakpoints-
+pause code at any point while being executed- investigate values
+
+BLUE ARROW ON CODE LINE
+- typically where you think code is breaking
+- create by clicking numbers, then refresh will stop at first breakpoint chosen
+
+
+
+execution control buttons-
+help control the pace when going through code
+- first button is not play and pause it is continuation to next breakpoint
+- do not create loads of breakpoints just step over function key which is second control btn
+- step into= if you want to dive into function
+- step out= does opposite, takes you out to parent scope
+- watch= lets you keep an eye on any js expression in real time with app
+
+
+the call stack- 
+when paused, will show what function pad brought you to that breakpoint
+async checkbox= include asynchronus calls like for jquery
