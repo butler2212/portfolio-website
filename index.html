@@ -19,20 +19,8 @@
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans
         +Pro:300,900&display=swap" rel="stylesheet">
 
-        <!--bootstrap-->
-        <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-
-        <!--Vendors-->
-        <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-        <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-        <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-        <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-        <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
-
         <!--Main CSS File-->
         <link rel="stylesheet" href="libs/css/style.css">
-        <link rel="stylesheet" type="text/css" href="libs/css/util.css">
-        <link rel="stylesheet" type="text/css" href="libs/css/main.css">
 
     </head>
     <body>
@@ -54,7 +42,7 @@
                       <li class="nav__item"><a href="#qualifications" class="nav__link">My Education</a></li>
                       <li class="nav__item"><a href="#experience" class="nav__link">My Experience</a></li>
                       <li class="nav__item"><a href="#work"class="nav__link">My Work</a></li>
-                      <li class="nav__item"><a href="#contactme"class="nav__link">Contact Me</a></li>
+                      <li class="nav__item"><a href="#contact"class="nav__link">Get in Touch</a></li>
                 </ul>
             </nav>
         </header>
@@ -75,7 +63,7 @@
                 in Thorpe Willoughby</p>
 
             <div class="about-me__body">
-                <p>Hi, I'm Jordan. I am a 29 year old full stack developer originally from the paradise of Gibraltar,
+                <p>Hi, I'm Jordan. I am a 31 year old full stack developer originally from the paradise of Gibraltar,
                      now based near York in the village of Thorpe Willoughby. Life hasn't always been this idyllic though, I was
                     once a salesman of various for several years until I was hit with an epiphany and chose to chase my 
                     dreams of building and designing amazing websites and applications.
@@ -132,70 +120,239 @@
                         <img src="libs/img/csharp.png" alt="C#" class="language__logo"></a>
                     <a href="https://en.wikipedia.org/wiki/JSON" target="_blank">
                         <img src="libs/img/json.png" alt="JSON" class="language__logo"></a>
+                    <a href="https://en.wikipedia.org/wiki/SQL_Server_Management_Studio" target="_blank">
+                        <img src="libs/img/ssms.png" alt="SSMS" class="language__logo"></a>
                 </div> <!-- / service -->
             </div> <!-- /services -->
 
-            <a href="#work" class="btn">Click here to see some of my work!</a>
+            <a href="#work" class="btn ">Click here to see some of my work!</a>
         </section>
         <!--End of Services-->
-
-        <!--My Qualifications -->
+<!--
+        My Qualifications
         <section class="my-qualifications" id="qualifications">
-            <h2 class="section__title section__title--qualifications">What I've Learnt</h2>
-                <!-- ======= cv Section ======= -->
-        <p class="section__subtitle section__subtitle--qualifications">Explore my life</p>
-        <div class="container">
-             <a href="https://www.northumbria.ac.uk/" target="_blank">  
-            <img src="libs/img/northumbria.png" alt="Northumbria University" 
-            class="university__logo northumbria__logo container__image"></a>
-                <div class="container__text">
-                    <h4>MSc Sport & Exercise Psychology</h4>
-                    <p><em>Northumbria University, Newcastle - 2013-2014</em></p>
-                </div>
-         </div>
+            <h2 class="section__title section__title--qualifications">Things I've Learnt</h2>
 
-            <div class="container">
-                <a href="http://www.reading.ac.uk/" target="_blank">
-            <img src="libs/img/reading.png" alt="University of Reading"
-             class="university__logo container__image"></a>   
-              <div class="container__text">
-                <h4>BSc Psychology</h4>
-                <p><em>University of Reading - 2010-2013</em></p>
-              </div>
-            </div>
-
-            <p class="section__subtitle section__subtitle--qualifications">Professional Qualifications</p>
-            <div class="container">
-                <div class="container__image">
-                    <a href="https://docs.microsoft.com/en-us/learn/certifications/mta-introduction-to-programming-using-html-and-css/" target="_blank">
-                    <img src="libs/img/mta.png" alt="MTA 98-383 Certification" class="university__logo container__image"></a>
-                <div class="container__text">
-                    <h4>MTA Microsoft 98-383 Certification</h4>
-                     <p><em>IT Career Switch - 2020-2021</em></p>
-                </div>
-                </div>
-           </div>
-
-            <div class="container">
-                <a href="https://www.cii.co.uk/" target="_blank">
-                <img src="libs/img/cii.png" alt="Cert CII" class="university__logo cii__logo container__image"></a>
-              <div class="container__text">
-                <h4>CII Level 3 Certificate in Insurance</h4>
-                <p><em>Chartered Insurance Institute - 2019-2020</em></p>
-                </div>
-            </div>
+   
+======= Carousel Section ======= 
+<div>
+    <div class="carousel">
+      <ul class="slides">
+        <input type="radio" name="radio-buttons" id="img-1" checked />
+        <li class="slide-container">
+          <div class="slide-image">
+            <img src="libs/img/gibraltar2.jpg">
           </div>
-        </div> 
-       </section>
-      
-      <!-- End cv Section -->
+          <div class="carousel-controls">
+            <label for="img-3" class="prev-slide">
+              <span>&lsaquo;</span>
+            </label>
+            <label for="img-2" class="next-slide">
+              <span>&rsaquo;</span>
+            </label>
+          </div>
+        </li>
+        <input type="radio" name="radio-buttons" id="img-2" />
+        <li class="slide-container">
+          <div class="slide-image">
+            <img src="libs/img/reading.jpg">
+          </div>
+          <div class="carousel-controls">
+            <label for="img-1" class="prev-slide">
+              <span>&lsaquo;</span>
+            </label>
+            <label for="img-3" class="next-slide">
+              <span>&rsaquo;</span>
+            </label>
+          </div>
+        </li>
+        <input type="radio" name="radio-buttons" id="img-3" />
+        <li class="slide-container">
+          <div class="slide-image">
+            <img src="libs/img/newcastle.jpg" >
+          </div>
+          <div class="carousel-controls">
+            <label for="img-2" class="prev-slide">
+              <span>&lsaquo;</span>
+            </label>
+            <label for="img-1" class="next-slide">
+              <span>&rsaquo;</span>
+            </label>
+          </div>
+        </li>
+        <li class="slide-container">
+            <div class="slide-image">
+              <img src="libs/img/york.jpg">
+            </div>
+            <div class="carousel-controls">
+              <label for="img-2" class="prev-slide">
+                <span>&lsaquo;</span>
+              </label>
+              <label for="img-1" class="next-slide">
+                <span>&rsaquo;</span>
+              </label>
+            </div>
+          </li>
+          <li class="slide-container">
+            <div class="slide-image">
+              <img src="libs/img/selby.jpg">
+            </div>
+            <div class="carousel-controls">
+              <label for="img-2" class="prev-slide">
+                <span>&lsaquo;</span>
+              </label>
+              <label for="img-1" class="next-slide">
+                <span>&rsaquo;</span>
+              </label>
+            </div>
+          </li>
+          <li class="slide-container">
+            <div class="slide-image">
+              <img src="https://speakzeasy.files.wordpress.com/2015/05/twa_blogpic_timisoara-4415.jpg">
+            </div>
+            <div class="carousel-controls">
+              <label for="img-2" class="prev-slide">
+                <span>&lsaquo;</span>
+              </label>
+              <label for="img-1" class="next-slide">
+                <span>&rsaquo;</span>
+              </label>
+            </div>
+          </li>
+          <li class="slide-container">
+            <div class="slide-image">
+              <img src="https://speakzeasy.files.wordpress.com/2015/05/twa_blogpic_timisoara-4415.jpg">
+            </div>
+            <div class="carousel-controls">
+              <label for="img-2" class="prev-slide">
+                <span>&lsaquo;</span>
+              </label>
+              <label for="img-1" class="next-slide">
+                <span>&rsaquo;</span>
+              </label>
+            </div>
+          </li>
+        <div class="carousel-dots">
+          <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+          <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+          <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+          <label for="img-3" class="carousel-dot" id="img-dot-4"></label>
+          <label for="img-3" class="carousel-dot" id="img-dot-5"></label>
+          <label for="img-3" class="carousel-dot" id="img-dot-6"></label>
+          <label for="img-3" class="carousel-dot" id="img-dot-7"></label>
+        </div>
+      </ul>
+    </div>
+  </div>
+<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="libs/img/gibraltar2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h4>Gibraltar</h4>
+          <h5>9 GCSE's & 3 A Levels between A* and C 2004-2010</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="libs/img/reading.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h4>Reading</h4>
+          <h5>BSc Psychology 2010-2013</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="libs/img/newcastle.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h4>Newcastle</h4>
+          <h5>MSc Sport & Exercise Psychology 2013-2014</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="libs/img/york.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h4>York</h4>
+          <h5>CII Level 3 Certificate in Insurance 2020</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="libs/img/selby.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h4>Selby</h4>
+          <h5>Microsoft MTA 98-383: Introduction to Programming 2021</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="libs/img/ronda.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h4>Ronda</h4>
+          <h5>Duke of Edinburgh: Bronze & Silver Award 2006-2008</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="libs/img/victoria.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h4>Gibraltar</h4>
+          <h5>World Rugby Level 1 Coaching Certificate 2008</h5>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+    </section>
+      End Carousel Section
 
-        <!--End of Qualifications-->
-
+        End of Qualifications
+-->
         <!--CV -->
     <section class="my-experiences" id="experience">
         <h2 class="section__title section__title--experience">My Working Life</h2>
             <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <a href="https://www.mosaicfs.com/" target="_blank">
+                          <img src="libs/img/Mosaic.png" alt="Mosaic" class="center"></a>
+                          <h5 class="job_title">Developer</h5>
+                          <p><em>2022 - 2023</em></p>
+                          <ul class="job_desc list_items ul">
+                              <li>Part of a development team migrating multiple high value clients to a new system in an effort to lower company
+                                 expenditure while increasing profit, utilising largely SQL</li>
+                              <li>Working in tandem with Project Managers and Client directly to ensure data, exports and reports 
+                                all work correctly for smoothest transition</li>
+                              <li>Worked with relevant partner teams that deal in resolving support tickets, in order to both knowledge
+                                 share and ensure support tickets are dealt with accurately and promptly</li>
+                              </ul>
+                    </div>
+                  </div>
+                <div class="column">
+                    <div class="card">
+                        <a href="https://novuna.co.uk" target="_blank">
+                      <img src="libs/img/novuna.png" alt="Novuna" class="center"></a>
+                      <h5 class="job_title">Junior Developer</h5>
+                          <p><em>2022 - 2022</em></p>
+                          <ul class="job_desc list_items ul">
+                              <li>Part of a development team working on Java codebase which calls information from multiple third parties in order to agree,
+                                 decline or refer to underwriting for financial transactions</li>
+                              <li>Working in tandem with Project Managers and Client directly using Jira
+                                 to manage priority work tickets to ensure project is ready for launch</li>
+                          </ul>
+                    </div>
+                  </div>
                 <div class="column">
                   <div class="card">
                       <a href="https://itcareerswitch.co.uk/coding-traineeship/" target="_blank">
@@ -214,39 +371,9 @@
                         </ul>
                   </div>
                 </div>
-                <div class="column">
-                    <div class="card">
-                        <a href="https://nfumutual.co.uk" target="_blank">
-                      <img src="libs/img/NFU-2.png" alt="NFU Mutual" class="center"></a>
-                      <h5 class="job_title">Motor & Personal Lines Underwriter</h5>
-                          <p><em>2021 - Present</em></p>
-                          <ul class="job_desc list_items ul">
-                              <li>Servicing multiple portfolios of both new business and existing customers across motor and personal insurance policies</li>
-                              <li>Responsible for making judgements regarding incoming referrals leading to accepting business, applying terms or declining business</li>
-                              <li>Accountable for adhering to my own underwriting authority and reporting any breaches of authority I come across to the relevant teams</li>
-                          </ul>
-                    </div>
-                  </div>
-                <div class="column">
-                  <div class="card">
-                      <a href="https://www.hiscox.co.uk/" target="_blank">
-                        <img src="libs/img/hiscox.png" alt="Hiscox" class="center"></a>
-                        <h5 class="job_title">Insurance Expert</h5>
-                        <p><em>2017 - 2021</em></p>
-                        <ul class="job_desc list_items ul">
-                            <li>Expected to service existing customers, manage their
-                                 accounts and ensure all business is kept within SLA  </li>
-                            <li>2019: call to sale of 14% against target of 12% and GWP at
-                                £112k against target of £80k</li>
-                            <li>Broke record for largest GWP in single transaction at £8.5k</li>
-                            <li>Presented with ‘Hiscox Hero’ award for best ‘Living the Values’
-                             in the office</li>
-                            </ul>
-                  </div>
-                </div>
               </div>
               
-            <a class= "downloadBtn" href="JordanButlerCV2021.pdf" target="_blank" download>
+            <a class= "downloadBtn" href="JordanButlerCV2023.pdf" target="_blank" download>
                 <i class="fas fa-download"></i>
             </a>
         </section>
@@ -268,10 +395,9 @@
                     <img src="libs/img/portfolio-02.png" alt="Company Directory" class="portfolio__img"/>
                 </a>
             </div>
-        </section>
+
 
         <!-- Contact Form-->
-
         <div class="container-contact100">
 
             <div class="wrap-contact100">
@@ -301,9 +427,9 @@
                     </div>
     
                     <div class="container-contact100-form-btn">
-                        <button type="submit" value="Send" name="send" class="contact100-form-btn">
+                        <button type="submit" value="Send" name="submit" class="contact100-form-btn">
                             <span>
-                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                <i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
                                 Send
                             </span>
                         </button>
@@ -311,8 +437,6 @@
                 </form>
             </div>
         </div>
-    
-    
 
         <!-- Footer -->
         <footer class="footer">
@@ -321,7 +445,7 @@
             </div>
             <ul class="social-list">
                 <li class="social-list__item">
-                    <a class="social-list__link" href="mailto:jlbutler_22@live.com">
+                    <a class="social-list__link" href="mailto:noreply@jordanbutler.co.uk">
                         <i class="far fa-paper-plane"></i>
                     </a>
                 </li>
@@ -354,16 +478,10 @@
                 <i class="fas fa-arrow-up"></i> 
             </button>
         </footer>
-
+ 
         <script src="libs/js/index.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" 
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
-        <script src="vendor/animsition/js/animsition.min.js"></script>
-        <script src="vendor/bootstrap/js/popper.js"></script>
-	    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-        <script src="vendor/select2/select2.min.js"></script>
-        <script src="vendor/daterangepicker/moment.min.js"></script>
-	    <script src="vendor/daterangepicker/daterangepicker.js"></script>
-        <script src="vendor/countdowntime/countdowntime.js"></script>
+
     </body>
 </html>
